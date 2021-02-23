@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "//brd-msg.github.io/static/css/main.0795cac1.chunk.css",
+    "main.js": "//brd-msg.github.io/static/js/main.b71fa1d2.chunk.js",
+    "main.js.map": "//brd-msg.github.io/static/js/main.b71fa1d2.chunk.js.map",
+    "runtime-main.js": "//brd-msg.github.io/static/js/runtime-main.892550c0.js",
+    "runtime-main.js.map": "//brd-msg.github.io/static/js/runtime-main.892550c0.js.map",
+    "static/js/2.10702d54.chunk.js": "//brd-msg.github.io/static/js/2.10702d54.chunk.js",
+    "static/js/2.10702d54.chunk.js.map": "//brd-msg.github.io/static/js/2.10702d54.chunk.js.map",
+    "index.html": "//brd-msg.github.io/index.html",
+    "static/css/main.0795cac1.chunk.css.map": "//brd-msg.github.io/static/css/main.0795cac1.chunk.css.map",
+    "static/js/2.10702d54.chunk.js.LICENSE.txt": "//brd-msg.github.io/static/js/2.10702d54.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.892550c0.js",
+    "static/js/2.10702d54.chunk.js",
+    "static/css/main.0795cac1.chunk.css",
+    "static/js/main.b71fa1d2.chunk.js"
+  ]
+}
