@@ -10,7 +10,6 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { GiFootprint, GiBackPain, GiCoconuts, GiFemaleLegs } from 'react-icons/gi'
 import { SiExpertsexchange } from 'react-icons/si'
-import '../css/Calendar.css'
 import DatePicker from './DatePicker.js'
 import LevelSlider from './LevelSlider.js';
 
