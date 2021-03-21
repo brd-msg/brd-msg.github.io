@@ -8,7 +8,7 @@ import Button from '@material-ui/core/Button';
 import SendIcon from '@material-ui/icons/Send';
 import DeleteIcon from '@material-ui/icons/Delete';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
-import { GiFootprint, GiBackPain, GiCoconuts, GiFemaleLegs } from 'react-icons/gi'
+import { GiFootprint, GiBackPain, GiCoconuts, GiFemaleLegs, GiSausage } from 'react-icons/gi'
 import { SiExpertsexchange } from 'react-icons/si'
 import DatePicker from './DatePicker.js'
 import LevelSlider from './LevelSlider.js';
@@ -92,54 +92,55 @@ export default function ContactForm() {
 
     const handleChange = (event: React.ChangeEvent<{}>, value: number | number[]) => {
 
-
-        switch (value) {
-            case 0:
-                setFoot(false)
-                setLegs(false)
-                setBack(false)
-                setCoconut(false)
-                setXxx(false)
-                break;
-            case 1:
-                setFoot(true)
-                setLegs(false)
-                setBack(false)
-                setCoconut(false)
-                setXxx(false)
-                break;
-            case 2:
-                setFoot(true)
-                setLegs(true)
-                setBack(false)
-                setCoconut(false)
-                setXxx(false)
-                break;
-            case 3:
-                setFoot(true)
-                setLegs(true)
-                setBack(true)
-                setCoconut(false)
-                setXxx(false)
-                break;
-            case 4:
-                setFoot(true)
-                setLegs(true)
-                setBack(true)
-                setCoconut(true)
-                setXxx(false)
-                break;
-            case 5:
-                setFoot(true)
-                setLegs(true)
-                setBack(true)
-                setCoconut(true)
-                setXxx(true)
-                break;
-            default:
-                return console.log('Error');
+        if (value < 10) {
+            setFoot(false)
+            setLegs(false)
+            setBack(false)
+            setCoconut(false)
+            setXxx(false)
+            return
+        } else if (value > 10 && value < 30){
+            setFoot(true)
+            setLegs(false)
+            setBack(false)
+            setCoconut(false)
+            setXxx(false)
+            return
+        }else if (value > 30 && value < 48){
+            setFoot(true)
+            setLegs(true)
+            setBack(false)
+            setCoconut(false)
+            setXxx(false)
+            return
         }
-
+        else if (value > 48 && value < 65){
+            setFoot(true)
+                setLegs(true)
+                setBack(true)
+                setCoconut(false)
+                setXxx(false)
+                return
+        }
+        else if (value > 65 && value < 100){
+            setFoot(true)
+            setLegs(true)
+            setBack(true)
+            setCoconut(true)
+            setXxx(false)
+            return
+        }else if (value >=100 ){
+            setFoot(true)
+            setLegs(true)
+            setBack(true)
+            setCoconut(true)
+            setXxx(true)
+            return
+        }
+        else{
+            return console.log('Error');
+        }
+      
     }
 
     return (
@@ -171,7 +172,7 @@ export default function ContactForm() {
 
                     <GiCoconuts className={coconut ? 'ra-icon-coconut-opn' : 'ra-icon'} />
 
-                    <SiExpertsexchange className={xxx ? 'ra-icon-x-opn' : 'ra-icon'} />
+                    <GiSausage className={xxx ? 'ra-icon-x-opn' : 'ra-icon'} />
                     <LevelSlider
                         onChange={handleChange}
 

@@ -20,7 +20,7 @@ const AirbnbSlider = withStyles({
     color: '#d2a663',
     height: 3,
     padding: '13px 0',
-    width: 250,
+    width: 280,
   },
   thumb: {
     height: 27,
@@ -74,11 +74,13 @@ export default function CustomizedSlider(props) {
         ThumbComponent={AirbnbThumbComponent}
         getAriaLabel={(index) => (index === 0 ? 'Minimum price' : 'Maximum price')}
         value={props.value}
-        step={1}
-        min={0}
-        max={5}
+        // step={1}
+        // min={0}
+        // max={5}
+        
         onChange={props.onChange}
         name={'MSG LEVEL'}
+    
       />
     </div>
   );
