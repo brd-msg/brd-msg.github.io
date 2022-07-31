@@ -9,7 +9,7 @@ import SendIcon from '@material-ui/icons/Send';
 import DeleteIcon from '@material-ui/icons/Delete';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { GiFootprint, GiBackPain, GiCoconuts, GiFemaleLegs, GiSausage } from 'react-icons/gi'
-import { SiExpertsexchange } from 'react-icons/si'
+// import { SiExpertsexchange } from 'react-icons/si'
 import DatePicker from './DatePicker.js'
 import LevelSlider from './LevelSlider.js';
 
@@ -90,7 +90,7 @@ export default function ContactForm() {
     }
 
 
-    const handleChange = (event: React.ChangeEvent<{}>, value: number | number[]) => {
+    const handleChange = (event, value) => {
 
         if (value < 10) {
             setFoot(false)

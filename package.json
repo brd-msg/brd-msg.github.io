@@ -1,6 +1,6 @@
 {
-  "homepage": "https://brd-msg.github.io//brd-msg.github.io",
-  "name": "brd-u.github.io",
+  "homepage": "https://brd-msg.github.io",
+  "name": "brd-msg.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,8 @@
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1"
+    "react-scripts": "4.0.1",
+    "yarn-upgrade-all": "^0.7.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,6 +47,7 @@
   "devDependencies": {
     "@iconify-icons/file-icons": "^1.1.2",
     "@iconify/react": "^1.1.3",
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.1.0",
+    "webpack-pwa-manifest": "^4.3.0"
   }
 }
